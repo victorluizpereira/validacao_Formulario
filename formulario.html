@@ -1,0 +1,82 @@
+<!Doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="./jvs.js">	</script>
+	<link rel="stylesheet" type="text/css" href="./styleform.css">
+	<title>Exerciciojs01</title>
+</head>
+<body>
+	<div class="formulario" name="formulario">
+		<h3>Furmalário de cadastro</h3>
+		<hr/>
+		<form>
+		<fieldset>
+			<legend><b>Cadastro</b></legend>
+			<label for="nome">Insira um nome:</label>
+			<input type="text" id="bloc1" size="30" placeholder="Nome completo" onfocusout="invalido(this, 1);">
+			<label id="valid1">*</label>
+			<br/>
+			<br/>
+			<lable for="idade">Insira sua idade:</lable>
+			<input type="number" id="bloc2" size="3"
+			placeholder="Idade" min="12"  max = "100" onfocusout="invalido(this, 2);" >
+			<label id="valid2">*</label>
+			<br/>
+			<br/>
+			<label>Insira seu sexo:</label>
+			<br>
+			<input type="radio" id="masc" name="sexo" checked>
+			<label for="masc">Masculino</label>
+			<input type="radio" id="fem" name="sexo">
+			<label for="fem">Feminino:</label>
+			<br/>
+			<br/>
+			<label>Data de nascimento</label>
+			<input type="date" id="data">
+			<br/>
+			<br/>
+			<label for="rg">Insira seu RG:</label>
+			<input type="text" id="bloc3" max="13" min="11" maxlength="12" placeholder="ex.: 12.345.567-8" onfocusout="invalido(this, 3);">
+			<label id="valid3">*</label>
+			<br/>
+			<br/>
+			<label for="cpf">Insira seu cpf:</label>
+			<input type="text" id="bloc4" placeholder="ex.: 123.456.789-00" onfocusout="invalido(this, 4);">
+			<label id="valid4">*</label>
+			<br/>
+			<br/>
+		</fieldset>
+		<br/>
+		<br/>
+		<fieldset>
+			<legend><b>Conta</b></legend>
+			<label>insira seu email:</label>
+			<input type="email"size="50" placeholder="ex.: emailexemplo@gmail.com" required id="bloc5" onfocusout="invalido(this, 5);">
+			<label id="valid5">*</label>
+			<br/>
+			<br/>
+			<label>confirme seu email:</label>
+			<input type="email" size="50" placeholder="ex.: emailexemplo@gmail.com" required id="bloc6" onfocusout="invalido(this, 6);">
+			<label id="valid6">*</label>
+			<br/>
+			<br/>
+			<label>insira uma senha:</label>
+			<input type="password" size="10" placeholder="Até 8 digitos" maxlength="8" required id="bloc7" onfocusout="invalido(this, 7);">
+			<label id="valid7">*</label>
+			<br/>
+			<br/>
+			<label>confirme uma senha:</label>
+			<input type="password" size="10" placeholder="Até 8 digitos" maxlength="8" required id="bloc8" onfocusout="invalido(this, 8);">
+			<label id="valid8">*</label>
+		</fieldset>
+		</form>
+		<form name="botoes">
+			<br/>
+			<button name="valid" onclick="proximo()"><a name="link" href="#">Próximo</button>
+			<button name="clr" onclick="limpar()">Limpar</button>
+			<br/>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.formulario{
+	border-radius:10px;
+	background-color:#E2FFFF;
+	box-shadow: 0 1px 2px 1px rgba(0,0,0,0.5);
+	padding:25px;
+}
+.formulario h3{
+	color: black;
+	font-family:Arial,sans-serif;
+}
+hr{
+	border: 2px solid rgba(0,0,0,0.5);
+}
+fieldset{
+	background-color:#F0FFFF;
+	border:none;
+	border-radius: 10px;
+	box-shadow: 0 1px 2px 1px rgba(0,0,0,0.5);
+}
+fieldset input{
+	margin-left:5px;
+	padding-left:4px;
+	border-radius:4px;
+}
+button{
+	float:right;
+	border: 1px solid blue;
+	margin:3px;
+}
+button:hover{
+	background-color:#B0E0E6;
+	transition:linear 0.5s;
+}
